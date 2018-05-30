@@ -1,0 +1,50 @@
+/* Side notes for calling out things
+-------------------------------------------------- */
+
+/* Base styles (regardless of theme) */
+.bd-callout {
+  margin: 20px 0;
+  padding: 15px 30px 15px 15px;
+  border-left: 5px solid #eee;
+}
+.bd-callout h4 {
+  margin-top: 0;
+}
+.bd-callout p:last-child {
+  margin-bottom: 0;
+}
+.bd-callout code,
+.bd-callout .highlight {
+  background-color: #fff;
+}
+
+/* Themes for different contexts */
+.bd-callout-danger {
+  background-color: #fcf2f2;
+  border-color: #dFb5b4;
+}
+.bd-callout-warning {
+  background-color: #fefbed;
+  border-color: #f1e7bc;
+}
+.bd-callout-info {
+  background-color: #f0f7fd;
+  border-color: #d0e3f0;
+}
+
+.bd-callout-success {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+}
+
+.bd-callout-danger h4 {
+color: #B94A48;
+}
+
+.bd-callout-warning h4 {
+color: #C09853;
+}
+
+.bd-callout-info h4 {
+color: #3A87AD;
+}
