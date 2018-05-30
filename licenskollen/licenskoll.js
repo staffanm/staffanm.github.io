@@ -22,7 +22,7 @@ function addRow() {
   fType.change(function() {
     checkCompliance();
   });
-  var removeButton = $("<div class=\"col\"><button type=\"button\" class=\"form-control remove\" style=\"width: 40px;\"><i class=\"fas fa-minus-circle\"></button></div>");
+  var removeButton = $("<div><button type=\"button\" class=\"form-control remove\" style=\"width: 40px;\"><i class=\"fas fa-minus-circle\"></button></div>");
   removeButton.click(function() {
     $(this).parent().remove();
   });
@@ -55,8 +55,8 @@ function checkCompliance() {
   } else if (usage.GPLv2 || usage.GPLv3) {
     stat.type = "warning";
     stat.header = "Viral licens";
-    stat.text = "En eller fler av komponenterna använder en viral (copyleft) licens, vilket kräver att slutresultatet distribueras samma licens.";
-  } else if (usage.LPGLv21 && usage.Own) {
+    stat.text = "En eller fler av komponenterna använder en viral (copyleft) licens, vilket kräver att slutresultatet distribueras med samma licens.";
+  } else if (usage.LGPLv21 && usage.Own) {
     stat.type = "warning";
     stat.header = "Svagt viral licens";
     stat.text = "LGPL kan kombineras med andra licenser, men kräver att ändringar i den kod som är licenserad under LGPL görs tillgänglig under samma villkor."
