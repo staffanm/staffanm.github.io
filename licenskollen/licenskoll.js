@@ -47,7 +47,7 @@ function checkCompliance() {
   if (usage.BSDorig && (usage.GPLv2 || usage.GPLv3 || usage.Affero)) {
     stat.type = "danger";
     stat.header = "Inkompatibilitet";
-    stat.text = "Original BSD-licensen kräver att marknadsföring av resultatet inkluderar information om den licensierade komponenten; GPL-licenser är inte kompatibel med detta villkor.";
+    stat.text = "Original BSD-licensen kräver att marknadsföring av resultatet inkluderar information om den licensierade komponenten; GPL-licenser är inte kompatibla med detta villkor.";
   } else if (usage.Affero) {
     stat.type = "warning";
     stat.header = "Viral licens (SaaS)";
