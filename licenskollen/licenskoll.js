@@ -25,6 +25,7 @@ function addRow() {
   var removeButton = $("<div><button type=\"button\" class=\"form-control remove\" style=\"width: 40px;\"><i class=\"fas fa-minus-circle\"></button></div>");
   removeButton.click(function() {
     $(this).parent().remove();
+    checkCompliance();
   });
   fieldWrapper.append(fName);
   fTypeContainer = $("<div class=\"col\"></div>");
